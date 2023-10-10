@@ -21,13 +21,21 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         leading: const Icon(Icons.format_align_justify),
-        title: Text(
-          'Brand',
-          style: GoogleFonts.poppins(
-            color: Colors.blue.shade300,
-            fontSize: 24,
-            fontWeight: FontWeight.w500,
-          ),
+        title: Row(
+          children: [
+            Image.asset(
+              'images/logo-symbol.png',
+              width: width*0.1, height: height*0.1,
+            ),
+            Text(
+              'Brand',
+              style: GoogleFonts.poppins(
+                color: Colors.blue.shade300,
+                fontSize: 24,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ],
         ),
         actions: [
           IconButton(
@@ -43,10 +51,10 @@ class _HomeScreenState extends State<HomeScreen> {
             Row(
               children: [
                 Padding(
-                  padding: const EdgeInsets.all(10.0),
+                  padding: const EdgeInsets.all(9.0),
                   child: SizedBox(
                     height: height * 0.073,
-                    width: width * 0.90,
+                    width: width * 0.95,
                     child: SearchAnchor(builder:
                         (BuildContext context, SearchController controller) {
                       return SearchBar(
@@ -166,15 +174,13 @@ class _HomeScreenState extends State<HomeScreen> {
                     'https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
                     errorBuilder: (BuildContext context, Object exception,
                         StackTrace? stackTrace) {
-                      // This callback is called when an error occurs while loading the image.
 
-                      // Return a custom error widget with a red warning icon.
                       return const Center(
                         child: Icon(
                           Icons.warning,
                           color: Colors.red,
                           size:
-                              48, // Adjust the size of the warning icon as needed
+                              12, // Adjust the size of the warning icon as needed
                         ),
                       );
                     },
@@ -475,7 +481,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 8),
                     child: Text(
-                      'Recomended Items',
+                      'Recommended Items',
                       style: GoogleFonts.poppins(
                         color: Colors.black,
                         fontSize: 20,

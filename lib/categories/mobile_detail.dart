@@ -45,13 +45,13 @@ class _MobileDetailState extends State<MobileDetail> {
                 CarouselSlider(
                   options: CarouselOptions(
                     height: height * 0.4,
-                    // Set the height of the carousel
+
                     autoPlay: true,
-                    // Enable auto-play
+
                     autoPlayInterval: const Duration(seconds: 3),
-                    // Set auto-play interval
+
                     enlargeCenterPage:
-                        true, // Increase the size of the centered item
+                        true,
                   ),
                   items: [
                     // Add your carousel items here (e.g., Image widgets)
@@ -269,7 +269,7 @@ class _MobileDetailState extends State<MobileDetail> {
                               Row(
                                 children: [
                                   Text(
-                                    'Categorey : ',
+                                    'Category : ',
                                     style: GoogleFonts.poppins(
                                       color: Colors.grey.shade600,
                                       fontSize: 15,
@@ -406,14 +406,14 @@ class _MobileDetailState extends State<MobileDetail> {
                                     fontSize: 15, color: Colors.grey.shade600),
                               ),
                               Text(
-                                'Guanjoi Tradding LLC',
+                                'Guanjoi Trading LLC',
                                 style: GoogleFonts.poppins(
                                     fontSize: 13, color: Colors.grey.shade600),
                               ),
                             ],
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width:65,
                         ),
                         IconButton(
@@ -434,10 +434,10 @@ class _MobileDetailState extends State<MobileDetail> {
                       children: [
                         Row(
                           children: [
-                            // Image.asset(
-                            //   'images/flag.png',
-                            //    width: 5, height: 5,
-                            // ),
+                            Image.asset(
+                              'images/flag.png',
+                               width: width*0.1, height: height*0.1,
+                            ),
                             Text('Germany',
                               style: GoogleFonts.poppins(
                                   fontSize: 13, color: Colors.grey.shade600)
@@ -446,14 +446,14 @@ class _MobileDetailState extends State<MobileDetail> {
                         ),
                         Row(
                           children: [
-                            Icon(Icons.verified_user, color: Colors.grey,),
+                            const Icon(Icons.verified_user, color: Colors.blue,),
                             Text('verified',style: GoogleFonts.poppins(
                                 fontSize: 13, color: Colors.grey.shade600),),
                           ],
                         ),
                         Row(
                           children: [
-                            Icon(Icons.language, color: Colors.grey,),
+                            const Icon(Icons.language, color: Colors.green,),
                             Text('Shipping',style: GoogleFonts.poppins(
                                 fontSize: 13, color: Colors.grey.shade600),),
                           ],
@@ -491,28 +491,28 @@ class _MobileDetailState extends State<MobileDetail> {
                           imageUrl: "images/shirt2.png",
                           productPrice: 'Rs 1500/-',
                           descrip:
-                          'T-shirts in multiple colors\n availabe for men ',
+                          'T-shirts in multiple colors\n available for men ',
                           onPressed: () {},
                         ),
                         CustomCard3(
                           imageUrl: "images/shirt2.png",
                           productPrice: 'Rs 1500/-',
                           descrip:
-                          'T-shirts in multiple colors\n availabe for men ',
+                          'T-shirts in multiple colors\n available for men ',
                           onPressed: () {},
                         ),
                         CustomCard3(
                           imageUrl: "images/shirt2.png",
                           productPrice: 'Rs 1500/-',
                           descrip:
-                          'T-shirts in multiple colors\n availabe for men ',
+                          'T-shirts in multiple colors\n available for men ',
                           onPressed: () {},
                         ),
                         CustomCard3(
                           imageUrl: "images/shirt2.png",
                           productPrice: 'Rs 1500/-',
                           descrip:
-                          'T-shirts in multiple colors\n availabe for men ',
+                          'T-shirts in multiple colors\n available for men ',
                           onPressed: () {},
                         ),
                       ],

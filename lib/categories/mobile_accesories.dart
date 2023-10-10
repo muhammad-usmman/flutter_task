@@ -49,10 +49,10 @@ class _MobileAssescorieState extends State<MobileAssescorie> {
             Row(
               children: [
                 Padding(
-                  padding: const EdgeInsets.all(10.0),
+                  padding: const EdgeInsets.all(9.0),
                   child: SizedBox(
                     height: height * 0.073,
-                    width: width * 0.90,
+                    width: width * 0.95,
                     child: SearchAnchor(builder:
                         (BuildContext context, SearchController controller) {
                       return SearchBar(
@@ -253,28 +253,28 @@ class _MobileAssescorieState extends State<MobileAssescorie> {
                           imageUrl: "images/shirt2.png",
                           productPrice: 'Rs 1500/-',
                           descrip:
-                              'T-shirts in multiple colors\n availabe for men ',
+                              'T-shirts in multiple colors\n available for men ',
                           onPressed: () {},
                         ),
                         CustomCard3(
                           imageUrl: "images/shirt2.png",
                           productPrice: 'Rs 1500/-',
                           descrip:
-                              'T-shirts in multiple colors\n availabe for men ',
+                              'T-shirts in multiple colors\n available for men ',
                           onPressed: () {},
                         ),
                         CustomCard3(
                           imageUrl: "images/shirt2.png",
                           productPrice: 'Rs 1500/-',
                           descrip:
-                              'T-shirts in multiple colors\n availabe for men ',
+                              'T-shirts in multiple colors\n available for men ',
                           onPressed: () {},
                         ),
                         CustomCard3(
                           imageUrl: "images/shirt2.png",
                           productPrice: 'Rs 1500/-',
                           descrip:
-                              'T-shirts in multiple colors\n availabe for men ',
+                              'T-shirts in multiple colors\n available for men ',
                           onPressed: () {},
                         ),
                       ],

@@ -20,7 +20,7 @@ class CustomSelectCard extends StatelessWidget {
             borderRadius: BorderRadius.circular(
                 5),
           ),
-          padding: EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(14.0),
 
           shadowColor: Colors.transparent,
         ),
@@ -82,7 +82,7 @@ class _DisplayCardState extends State<DisplayCard> {
                 child: Column(
                   children: [
                     Container(
-                      padding: EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10),
                       width: width * 0.2,
                       height: height * 0.2,
                       decoration: BoxDecoration(
@@ -138,7 +138,7 @@ class _DisplayCardState extends State<DisplayCard> {
                             direction: Axis.horizontal,
                             allowHalfRating: true,
                             itemCount: 5,
-                            itemPadding: EdgeInsets.symmetric(horizontal: 2.0),
+                            itemPadding: const EdgeInsets.symmetric(horizontal: 2.0),
                             itemBuilder: (context, _) => const Icon(
                               Icons.star,
                               color: Colors.amber,
@@ -148,15 +148,15 @@ class _DisplayCardState extends State<DisplayCard> {
                             }),
                           ),
                           Text('$rating'),
-                          SizedBox(
+                          const SizedBox(
                             width: 5,
                           ),
-                          Icon(
+                          const Icon(
                             Icons.circle,
                             size: 5,
                             color: Colors.green,
                           ),
-                          Text('154 orders'),
+                          const Text('154 orders'),
                         ],
                       ),
                     ],
